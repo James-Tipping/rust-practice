@@ -27,6 +27,10 @@
 *.env
 .env
 
+# Aider files
+
+*.aider*
+
 # Editor directories and files
 # ============================
 .vscode/
