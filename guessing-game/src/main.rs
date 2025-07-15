@@ -14,8 +14,12 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
+        if "quit" == guess.trim() {
+            panic!("You quit the game!");
+        }
+
         println!("You guessed {guess}");
-        let num_guess: i32 = match guess.trim().parse() {
+        let num_guess: i32 = match guess.parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
