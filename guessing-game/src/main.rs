@@ -32,6 +32,8 @@ fn main() {
                 break;
             }
         }
+
+        let guess = "42".parse().expect("Not a number!");
     }
 
     // if num_guess == secret_number {
