@@ -33,7 +33,7 @@ fn main() {
             }
         }
 
-        let guess = "42".parse().expect("Not a number!");
+        let guess: u32 = "42".parse().expect("Not a number!");
     }
 
     // if num_guess == secret_number {
